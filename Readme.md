@@ -1,6 +1,6 @@
 # Progress on work
 
-- [ ]   Basic view on Search for users
+- [x]   Basic view on Search for users
 - [ ]   Change fetch to axios, useSWR as a hook
 - [ ]   Route based splitting of user, comment, products
 - [ ]   Eslint/Prettier configuration
