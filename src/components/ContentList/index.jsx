@@ -21,20 +21,14 @@ const ContentList = () => {
         return () => {
             ignore = true;
         }
-    }, [url])
+    }, [url]);
 
-    console.log(data);
-        return (
-            <ul>
-                {data?.users?.map(item => (
-                    <li key={"item"+item.id}>
-                        <img src={item.image}></img>
-                        <span>{item.firstName} {item.lastName}</span>
-                    </li>
-                    )
-                )}
-            </ul>
-        );
+    console.log("data :: ", data);
+    return (
+    {data.users.map((item) => (
+        <img src={item.image}></img>
+    ))}
+    );
 }
 
 export default ContentList
