@@ -33,7 +33,8 @@ const ContentList = () => {
     useEffect(() => {
         setFilteredData(
             data?.users?.filter((item) => {
-                return item.firstName.toLowerCase().startsWith(searchInput.toLowerCase());
+                return item.firstName.toLowerCase().startsWith(searchInput.toLowerCase()) || 
+                item.lastName.toLowerCase().startsWith(searchInput.toLowerCase());
             })
         );
     }, [searchInput])
