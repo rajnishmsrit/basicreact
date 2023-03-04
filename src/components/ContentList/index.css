@@ -1,0 +1,12 @@
+.usersList {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow-y: auto;
+}
+.usersListItem {
+    width: 300px;
+    height: 300px;
+    padding: 1em;
+}
