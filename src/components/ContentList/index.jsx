@@ -3,7 +3,8 @@ import {useEffect, useState} from 'react'
 
 const ContentList = () => {
     const [data, setData] = useState(null);
-    
+    const [searchInput, setSearchInput] = useState(null);
+    const [filteredData, setFilteredData] = useState(null);
     const url = "https://dummyjson.com/users"
         
     useEffect(() => {
@@ -12,7 +13,8 @@ const ContentList = () => {
         .then((response) => response.json())
         .then(data => {
             if(!ignore){
-                setData(data)
+                setData(data);
+                setFilteredData(data?.users?.filter((item) => item.firstName!=""));
             }
         })
         .catch((error) => {
@@ -23,10 +25,30 @@ const ContentList = () => {
         }
     }, [url])
 
-    console.log(data);
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
+    }
+
+    useEffect(() => {
+        setFilteredData(
+            data?.users?.filter((item) => {
+                return item.firstName.toLowerCase().startsWith(searchInput.toLowerCase());
+            })
+        );
+    }, [searchInput])
+
+    //console.log(filteredData);
+    
     return (
+        <>
+        <input 
+        className="userListSearch"
+        placeholder="Search robots"
+        onChange={handleChange}
+        ></input>
         <ul className="usersList">
-            {data?.users?.map(item => (
+            {filteredData?.map(item => (
                 <li className="usersListItem" key={"item"+item.id}>
                     <img src={item.image}></img>
                     <span>{item.firstName} {item.lastName}</span>
@@ -34,6 +56,7 @@ const ContentList = () => {
                 )
             )}
         </ul>
+        </>
     );
 }
 

@@ -9,7 +9,7 @@ function LandingPage() {
         <nav>
           <ul className="navList">
             <li><a href="/">Home</a></li>
-            <li><a href="/">Users</a></li>
+            <li><a href="/">Robots</a></li>
             <li><a href="/">Products</a></li>
             <li><a href="/">Carts</a></li>
             <li><a href="/">Posts</a></li>
