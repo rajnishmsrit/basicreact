@@ -1,7 +1,7 @@
 import { describe, it, assert } from 'vitest';
 
 describe('Robots page test', () => {
-  it('robot page renders', () => {
+  it('math function test', () => {
     assert.equal(Math.sqrt(4), 2);
   });
 });
