@@ -1,20 +1,19 @@
-import ContentList from "../ContentList";
+import Robots from "../Robots";
 import Header from "../Header";
 import Footer from "../Footer";
+import {Outlet} from "react-router-dom"
 import './index.css'
 
-function LandingPage() {
+function Layout() {
   return (
     <div className="App">
       <Header/>
       <main>
-          <article>
-            <ContentList></ContentList>
-          </article>
+          <Outlet></Outlet>
       </main>
       <Footer />
     </div>
   )
 }
 
-export default LandingPage
+export default Layout
