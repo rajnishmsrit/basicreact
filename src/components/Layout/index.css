@@ -21,3 +21,7 @@
 .navList li a:hover {
     background-color: #111;
 }
+
+main {
+    min-height: 600px;
+}

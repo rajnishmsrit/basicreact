@@ -2,7 +2,9 @@ import './index.css'
 
 function HomePage() {
   return (
-    <h1> Landing page </h1>
+    <div className="homepage">
+      <h1> RoboMatrix </h1>
+    </div>
   )
 }
 
