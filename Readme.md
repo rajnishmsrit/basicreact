@@ -3,8 +3,8 @@
 - [x]   Basic view on Search for users
     - [x]   Fuzziness on firstname or lastname
 - [ ]   Integration with Jest / Vitest
-    - I did it partially but the test failure seem to have been cached in vitest report. will do later
-    - Probably remove vite and start using webpack to retrofit the whole HMR and rest stuff if testing fails
+    - [x] I did it partially but the test failure seem to have been cached in vitest report. will do later
+    - [x] Probably remove vite and start using webpack to retrofit the whole HMR and rest stuff if testing fails
 - [x]   Route based splitting of user, comment, products
 - [x]   Home Page for "RoboMatrix"
     - []   Add Fonts attractive
@@ -15,7 +15,10 @@
     - [ ] Make Menu right side
     - [ ] Add a logo on left side
 - [ ]   Change fetch to axios, useSWR as a hook
-- [ ]   Eslint/Prettier configuration
+- [ ]   BackEnd setup
+    - [ ] Eslint/Prettier configuration
+    - [ ] husky/pre-commit hooks
+    - [ ] setup code coverage
 - [ ]   Fetch based on GraphQL
 - [ ]   Themes
     - [ ]   Fonts
