@@ -2,13 +2,14 @@
 
 - [x]   Basic view on Search for users
     - [x]   Fuzziness on firstname or lastname
-- [ ]   Integration with Jest / Vitest
+- [x]   Integration with Jest / Vitest
     - [x] I did it partially but the test failure seem to have been cached in vitest report. will do later
     - [x] Probably remove vite and start using webpack to retrofit the whole HMR and rest stuff if testing fails
 - [x]   Route based splitting of user, comment, products
 - [x]   Home Page for "RoboMatrix"
     - []   Add Fonts attractive
-- [ ]   Code Splitting
+- [ ]   SSR
+- [ ]   Code Splitting (Chunking of Webpack)
 - [ ]   Bug fixing and Simmer UI
     - [ ] Show loading text icon etc
     - [ ] Make UI static
@@ -23,3 +24,4 @@
 - [ ]   Themes
     - [ ]   Fonts
     - [ ]   Accessibility
+- [ ]   Demo that vite can work independently with jest
